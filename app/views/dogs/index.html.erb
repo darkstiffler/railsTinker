@@ -1,0 +1,9 @@
+<h1>yooooooo whatup add a dog</h1>
+<% @dogs.each do |dog| %>
+	<%= dog.name %> <br>
+<% end %>
+
+<%= form_for Dog.new do |form| %>
+	<%= form.text_field :name %>
+	<%= form.submit :submit %>
+	<% end %>
